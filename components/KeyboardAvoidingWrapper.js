@@ -10,11 +10,13 @@ import {
 
 import { Colors } from './styles';
 
-const { primary } = Colors;
+const { buttonColor } = Colors;
 
 const KeyboardAvoidingWrapper = ({ children }) => {
   return (
-    <KeyboardAvoidingView style={{ flex: 1, backgroundColor: primary }}>
+    <KeyboardAvoidingView
+      style={{ backgroundColor: 'red', overflow: 'hidden' }}
+    >
       <ScrollView
         showsVerticalScrollIndicator={false}
         showsHorizontalScrollIndicator={false}

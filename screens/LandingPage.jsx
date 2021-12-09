@@ -9,6 +9,7 @@ import {
   KeyboardAvoidingView,
 } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
+import { Octicons } from '@expo/vector-icons';
 
 import Constants from 'expo-constants';
 const windowWidth = Dimensions.get('window').width;
@@ -27,7 +28,7 @@ const LandingPage = () => {
         <View style={landingScreen.SafeRide}>
           <Text style={landingScreen.SafeRideText}>Safe Rides</Text>
           <View style={landingScreen.TextInputContainer}>
-            <Text>Q</Text>
+            <Octicons name="search" size={20} color="black" />
             <TextInput
               style={{ marginLeft: 17 }}
               placeholder="Search Plate or Driver's Name"
@@ -151,6 +152,7 @@ const landingScreen = StyleSheet.create({
   },
   DriverContainer: {
     marginTop: 70,
+    // marginBottom: -50,
   },
   DriverSubContainer: {
     flexDirection: 'row',

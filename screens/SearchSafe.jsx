@@ -6,6 +6,7 @@ import Constants from 'expo-constants';
 const windowWidth = Dimensions.get('window').width;
 
 const StatusBarHeight = Constants.statusBarHeight;
+import Rating from '../components/Rating';
 
 const SearchSafe = () => {
   return (
@@ -27,7 +28,7 @@ const SearchSafe = () => {
       </View>
       <View style={searchSafe.RateContainer}>
         <Text style={searchSafe.RateText}>Rate them here</Text>
-        <Text>stars</Text>
+        <Rating />
       </View>
     </View>
   );
